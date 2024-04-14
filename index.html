@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Zero</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.5);
+            position: relative;
+            z-index: 2;
+        }
+        .glitch {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #f00;
+            clip: rect(0, 600px, 0, 0);
+            animation: glitch 1s infinite linear alternate-reverse;
+        }
+        @keyframes glitch {
+            2% {
+                transform: translate(2px, 0);
+                clip: rect(56px, 9999px, 48px, 0);
+            }
+            4% {
+                transform: translate(-2px, 0);
+                clip: rect(86px, 9999px, 29px, 0);
+            }
+            6% {
+                transform: translate(-2px, 0);
+                clip: rect(47px, 9999px, 20px, 0);
+            }
+            8% {
+                transform: translate(2px, 0);
+                clip: rect(60px, 9999px, 60px, 0);
+            }
+            10% {
+                transform: translate(2px, 0);
+                clip: rect(18px, 9999px, 36px, 0);
+            }
+            12% {
+                transform: translate(-2px, 0);
+                clip: rect(96px, 9999px, 27px, 0);
+            }
+            14% {
+                transform: translate(-2px, 0);
+                clip: rect(19px, 9999px, 96px, 0);
+            }
+            16% {
+                transform: translate(2px, 0);
+                clip: rect(31px, 9999px, 77px, 0);
+            }
+            18% {
+                transform: translate(-2px, 0);
+                clip: rect(77px, 9999px, 3px, 0);
+            }
+            20% {
+                transform: translate(-2px, 0);
+                clip: rect(41px, 9999px, 48px, 0);
+            }
+            22% {
+                transform: translate(-2px, 0);
+                clip: rect(11px, 9999px, 69px, 0);
+            }
+            24% {
+                transform: translate(2px, 0);
+                clip: rect(70px, 9999px, 61px, 0);
+            }
+            26% {
+                transform: translate(2px, 0);
+                clip: rect(75px, 9999px, 9px, 0);
+            }
+            28% {
+                transform: translate(2px, 0);
+                clip: rect(73px, 9999px, 2px, 0);
+            }
+            30% {
+                transform: translate(-2px, 0);
+                clip: rect(48px, 9999px, 24px, 0);
+            }
+            32% {
+                transform: translate(-2px, 0);
+                clip: rect(92px, 9999px, 23px, 0);
+            }
+            34% {
+                transform: translate(2px, 0);
+                clip: rect(46px, 9999px, 28px, 0);
+            }
+            36% {
+                transform: translate(2px, 0);
+                clip: rect(100px, 9999px, 54px, 0);
+            }
+            38% {
+                transform: translate(-2px, 0);
+                clip: rect(88px, 9999px, 16px, 0);
+            }
+            40% {
+                transform: translate(2px, 0);
+                clip: rect(73px, 9999px, 23px, 0);
+            }
+            42% {
+                transform: translate(2px, 0);
+                clip: rect(97px, 9999px, 69px, 0);
+            }
+            44% {
+                transform: translate(-2px, 0);
+                clip: rect(45px, 9999px, 67px, 0);
+            }
+            46% {
+                transform: translate(-2px, 0);
+                clip: rect(3px, 9999px, 54px, 0);
+            }
+            48% {
+                transform: translate(2px, 0);
+                clip: rect(19px, 9999px, 12px, 0);
+            }
+            50% {
+                transform: translate(-2px, 0);
+                clip: rect(42px, 9999px, 79px, 0);
+            }
+            52% {
+                transform: translate(2px, 0);
+                clip: rect(22px, 9999px, 63px, 0);
+            }
+            54% {
+                transform: translate(2px, 0);
+                clip: rect(76px, 9999px, 44px, 0);
+            }
+            56% {
+                transform: translate(2px, 0);
+                clip: rect(63px, 9999px, 68px, 0);
+            }
+            58% {
+                transform: translate(2px, 0);
+                clip: rect(49px, 9999px, 20px, 0);
+            }
+            60% {
+                transform: translate(2px, 0);
+                clip: rect(26px, 9999px, 3px, 0);
+            }
+            62% {
+                transform: translate(-2px, 0);
+                clip: rect(90px, 9999px, 67px, 0);
+            }
+            64% {
+                transform: translate(2px, 0);
+                clip: rect(38px, 9999px, 51px, 0);
+            }
+            66% {
+                transform: translate(2px, 0);
+                clip: rect(24px, 9999px, 13px, 0);
+            }
+            68% {
+                transform: translate(-2px, 0);
+                clip: rect(86px, 9999px, 94px, 0);
+            }
+            70% {
+                transform: translate(-2px, 0);
+                clip: rect(41px, 9999px, 76px, 0);
+            }
+            72% {
+                transform: translate(2px, 0);
+                clip: rect(48px, 9999px, 77px, 0);
+            }
+            74% {
+                transform: translate(2px, 0);
+                clip: rect(20px, 9999px, 52px, 0);
+            }
+            76% {
+                transform: translate(-2px, 0);
+                clip: rect(68px, 9999px, 84px, 0);
+            }
+            78% {
+                transform: translate(-2px, 0);
+                clip: rect(2px, 9999px, 72px, 0);
+            }
+            80% {
+                transform: translate(2px, 0);
+                clip: rect(79px, 9999px, 77px, 0);
+            }
+            82% {
+                transform: translate(-2px, 0);
+                clip: rect(21px, 9999px, 53px, 0);
+            }
+            84% {
+                transform: translate(-2px, 0);
+                clip: rect(67px, 9999px, 26px, 0);
+            }
+            86% {
+                transform: translate(-2px, 0);
+                clip: rect(27px, 9999px, 42px, 0);
+            }
+            88% {
+                transform: translate(-2px, 0);
+                clip: rect(92px, 9999px, 44px, 0);
+            }
+            90% {
+                transform: translate(-2px, 0);
+                clip: rect(93px, 9999px, 78px, 0);
+            }
+            92% {
+                transform: translate(2px, 0);
+                clip: rect(86px, 9999px, 19px, 0);
+            }
+            94% {
+                transform: translate(-2px, 0);
+                clip: rect(70px, 9999px, 43px, 0);
+            }
+            96% {
+                transform: translate(2px, 0);
+                clip: rect(79px, 9999px, 21px, 0);
+            }
+            98% {
+                transform: translate(-2px, 0);
+                clip: rect(59px, 9999px, 50px, 0);
+            }
+            100% {
+                transform: translate(2px, 0);
+                clip: rect(80px, 9999px, 94px, 0);
+            }
+        }
+        .matrix-container {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        .matrix-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 2em;
+            line-height: 1.2;
+            white-space: nowrap;
+            animation: animate 10s linear infinite;
+        }
+        @keyframes animate {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #00ff00;
+            color: #0a0a0a;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 2;
+        }
+        .cta-button:hover {
+            background-color: #007700;
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix-background">
+        <div class="matrix-text">
+            <!-- Repeat Matrix code here -->
+          root@breakingzero$ ./init 
+        </div>
+    </div>
+    <div class="content">
+        <h1>Breaking Zero<span class="glitch">Breaking Zero</span></h1>
+        <div class="matrix-container">
+            <div class="matrix-text">
+                Place were Hackers live
+            </div>
+        </div>
+        <button class="cta-button">Enter</button>
+    </div>
+<!--
+  
+  ____                 _    _               ______              
+ |  _ \               | |  (_)             |___  /              
+ | |_) |_ __ ___  __ _| | ___ _ __   __ _     / / ___ _ __ ___  
+ |  _ <| '__/ _ \/ _` | |/ / | '_ \ / _` |   / / / _ \ '__/ _ \ 
+ | |_) | | |  __/ (_| |   <| | | | | (_| |  / /_|  __/ | | (_) |
+ |____/|_|  \___|\__,_|_|\_\_|_| |_|\__, | /_____\___|_|  \___/ 
+                                     __/ |                      
+                                    |___/                       
+
+Something new is coming!
+  -->
+</body>
+</html>
